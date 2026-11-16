@@ -1,4 +1,10 @@
+ANEES AHMED 
+26i-3129
+SE-C
 DEAD POETS SOCIETY - MOVIE FAN PAGE
+3
+CHATGPT
+
 
 FILES
 - index.html: Home page
