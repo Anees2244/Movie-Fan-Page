@@ -1,0 +1,42 @@
+/* ANEES AHMED
+   26I-3129
+   SE-C
+*/
+body{
+    background-color: #222222;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+h1 {
+    color: gold;
+    font-size: 40px;
+}
+p {
+    width: 60%;
+    margin: 20px auto;
+    font-size: 18px;
+
+table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+}
+th {
+    background-color: gold;
+    color: black;
+}
+button {
+    background-color: gold;
+    color: black;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+}
