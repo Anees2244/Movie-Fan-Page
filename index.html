@@ -1,46 +1,74 @@
-<!--ANEES AHMED-->
-<!--26i-3129-->
-<!--SE-C-->
-
 <!DOCTYPE html>
- <html>
-    <head>
-        <title>MOVIE FAN PAGE</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    <h1>Dead Poets Society</h1>
-     <p>
-        Dead Poets Society is a 1989 movie about an English teacher who inspires 
-        his students to love poetry and seize the day ("Carpe Diem").
-    </p>
-    <table>
-        <tr>
-            <th>Movie Scenes</th>
-            <th>Rating</th>
-        </tr>
-        <tr>
-            <td>O Captain! My Captain! Scene</td>
-            <td>10 / 10</td>
-        </tr>
-        <tr>
-            <td>Carpe Diem Lesson</td>
-            <td>9.5 / 10</td>
-        </tr>
-        <tr>
-            <td>Ripping the Textbook</td>
-            <td>9 / 10</td>
-        </tr>
-    </table>
-    <br>
-    <button>Play</button>
-    <br>
-    <button onclick="playMovie()">Play</button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dead Poets Society | Movie Fan Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Dead Poets Society</h1>
+            <h3>Released in 1989</h3>
+            <img src="images/movie-poster.jpg" alt="Dead Poets Society movie poster image" class="movie-poster">
+            <h2>Carpe Diem — Seize the Day!</h2>
+            <p>Dead Poets Society is a 1989 movie about an English teacher who inspires his students to love poetry, think independently, and seize the day.</p>
+            <button type="button" onclick="playMovie()">Play</button>
+        </section>
+
+        <section class="content-section">
+            <h2>About the Movie</h2>
+            <p>Dead Poets Society tells the story of students attending a strict and traditional boarding school called Welton Academy.</p>
+            <p>Their lives begin to change when a new English teacher, John Keating, introduces them to poetry and encourages them to think differently.</p>
+            <p>Through his unique teaching methods, he teaches his students to follow their passions, express themselves, and make the most of their lives.</p>
+            <h3>The Main Message</h3>
+            <p>The central message of the movie is “Carpe Diem”, a Latin phrase meaning “Seize the Day”. It encourages people to make their lives meaningful and follow their dreams.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>My Favourite Movie Scenes</h2>
+            <p>These are some of my favourite moments from Dead Poets Society, along with my personal ratings.</p>
+            <div class="table-container">
+                <table>
+                    <tr><th>Movie Scenes</th><th>Rating</th></tr>
+                    <tr><td>O Captain! My Captain! Scene</td><td>10 / 10</td></tr>
+                    <tr><td>Carpe Diem Lesson</td><td>9.5 / 10</td></tr>
+                    <tr><td>Ripping the Textbook</td><td>9 / 10</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Explore More</h2>
+            <p>Discover the inspiring characters and memorable moments of Dead Poets Society.</p>
+            <a href="characters.html" class="btn">Meet the Characters</a>
+            <br><br>
+            <a href="gallery.html" class="btn">Explore Movie Gallery</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Dead Poets Society - Movie Fan Page</p>
+        <p>Anees Ahmed | 26I-3129 | FAST-NUCES | SE-C</p>
+        <p>Carpe Diem - Seize the Day!</p>
+    </footer>
+
     <script>
         function playMovie() {
             console.log("Play button was clicked for Dead Poets Society");
-            window.alert("Now playing Dead Poets Society! Carpe Diem!");
+            window.alert("Welcome to Dead Poets Society! Carpe Diem!");
         }
     </script>
-    </body>
-    </html>
+</body>
+</html>

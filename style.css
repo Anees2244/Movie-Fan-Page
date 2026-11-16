@@ -1,42 +1,99 @@
-/* ANEES AHMED
-   26I-3129
-   SE-C
+/* DEAD POETS SOCIETY - MOVIE FAN PAGE
+   Anees Ahmed | 26I-3129 | FAST-NUCES | SE-C
 */
-body{
+
+/* 1. General styling */
+* { box-sizing: border-box; }
+body {
     background-color: #222222;
-    color: white;
+    color: #FFFFFF;
     font-family: Arial, sans-serif;
     text-align: center;
-    padding: 50px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
-h1 {
-    color: gold;
-    font-size: 40px;
-}
-p {
-    width: 60%;
-    margin: 20px auto;
-    font-size: 18px;
 
-table {
-    margin: 30px auto;
-    border-collapse: collapse;
-    width: 50%;
+/* 2. Headings and paragraphs */
+h1, h2, h3 { color: #FFD700; }
+h1 { font-size: 40px; margin: 25px 0; }
+h2 { font-size: 30px; margin: 20px 0; }
+h3 { font-size: 22px; }
+p { width: 60%; max-width: 800px; margin: 20px auto; font-size: 18px; }
+
+/* 3. Navigation bar */
+.navbar { background-color: #181818; padding: 15px 20px; border-bottom: 2px solid #FFD700; }
+.navbar ul { list-style: none; display: flex; justify-content: center; align-items: center; gap: 35px; margin: 0; padding: 0; flex-wrap: wrap; }
+.navbar a { color: #FFFFFF; text-decoration: none; font-size: 18px; font-weight: bold; transition: color 0.3s ease; }
+.navbar a:hover, .navbar a.active { color: #FFD700; }
+
+/* 4. Main sections and hero */
+.container, .content-section { width: 90%; max-width: 1100px; margin: 30px auto; padding: 20px; }
+.hero { padding: 35px 20px; margin: 25px auto; width: 90%; max-width: 1100px; }
+.hero p { width: 70%; }
+
+/* 5. Buttons */
+button, .btn { display: inline-block; background-color: #FFD700; color: #000000; font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; padding: 12px 30px; border: none; border-radius: 5px; text-decoration: none; cursor: pointer; transition: background-color 0.3s ease, transform 0.3s ease; }
+button:hover, .btn:hover { background-color: #FFFFFF; color: #000000; transform: scale(1.05); }
+
+/* 6. Images */
+img { max-width: 100%; height: auto; }
+.movie-poster { width: 280px; max-width: 100%; border-radius: 10px; margin: 20px auto; transition: transform 0.3s ease; }
+.movie-poster:hover { transform: scale(1.03); }
+.character-image { width: 100%; height: 220px; object-fit: cover; border-radius: 8px; }
+.gallery-image { width: 100%; height: 230px; object-fit: cover; border-radius: 8px; transition: transform 0.3s ease; }
+.gallery-image:hover { transform: scale(1.04); }
+
+/* 7. Movie ratings table */
+.table-container { width: 90%; max-width: 800px; margin: 30px auto; overflow-x: auto; }
+table { margin: 30px auto; border-collapse: collapse; width: 70%; color: #FFFFFF; }
+th, td { border: 1px solid #FFFFFF; padding: 12px; text-align: center; }
+th { background-color: #FFD700; color: #000000; }
+tr:hover td { background-color: #333333; }
+
+/* 8. Character cards */
+.character-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; width: 90%; max-width: 1100px; margin: 30px auto; }
+.character-card { background-color: #303030; border: 1px solid #FFD700; border-radius: 10px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.character-card:hover { transform: translateY(-5px); box-shadow: 0 6px 18px rgba(255, 215, 0, 0.15); }
+.character-card p { width: 100%; font-size: 16px; }
+
+/* 9. Movie gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; width: 90%; max-width: 1100px; margin: 30px auto; }
+.gallery-item { background-color: #303030; padding: 15px; border: 1px solid #FFD700; border-radius: 10px; overflow: hidden; }
+.gallery-item p { width: 100%; font-size: 16px; }
+
+/* 10. Footer */
+.footer { background-color: #181818; color: #FFFFFF; padding: 20px; margin-top: 40px; border-top: 2px solid #FFD700; text-align: center; }
+.footer p { width: 90%; font-size: 14px; margin: 8px auto; }
+
+/* 11. General links */
+a { transition: color 0.3s ease; }
+
+/* 12. Tablet layout */
+@media screen and (max-width: 768px) {
+    h1 { font-size: 32px; }
+    h2 { font-size: 26px; }
+    p { width: 85%; font-size: 16px; }
+    .navbar ul { gap: 20px; }
+    .character-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    table { width: 90%; }
+    .hero p { width: 85%; }
 }
-th, td {
-    border: 1px solid white;
-    padding: 10px;
-}
-th {
-    background-color: gold;
-    color: black;
-}
-button {
-    background-color: gold;
-    color: black;
-    font-size: 20px;
-    padding: 10px 30px;
-    border: none;
-    cursor: pointer;
-}
+
+/* 13. Mobile layout */
+@media screen and (max-width: 480px) {
+    h1 { font-size: 28px; }
+    h2 { font-size: 23px; }
+    h3 { font-size: 19px; }
+    p { width: 95%; font-size: 15px; }
+    .navbar { padding: 12px; }
+    .navbar ul { flex-direction: column; gap: 12px; }
+    .container, .content-section { width: 100%; padding: 15px; }
+    .character-grid, .gallery-grid { grid-template-columns: 1fr; }
+    table { width: 100%; font-size: 14px; }
+    th, td { padding: 8px; }
+    .movie-poster { width: 220px; }
+    .footer { padding: 15px; }
+    button, .btn { font-size: 16px; padding: 10px 22px; }
 }
